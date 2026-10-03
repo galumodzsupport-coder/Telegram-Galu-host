@@ -611,7 +611,7 @@ async def owner_admin(m: Message):
     await m.answer(
         f"👑 <b>Owner Panel</b>\\n{LINE}\\n"
         f"📢 Updates Channel: <code>{channel}</code>\\n"
-        f"👥 Users: <code>{len(DB.get('users', {}))}</code>\\n\\n"
+        f"👥 Users: <code>{len(DB["users"])}</code>\\n\\n"
         f"Use <code>/setchannel @channelusername</code> to change the channel."
     )
 
